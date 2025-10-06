@@ -5,8 +5,9 @@ numpy
 pandas
 scikit-learn
 streamlit
-opencv-python-headless
-moviepy
+imageio
+imageio-ffmpeg
+av
 librosa
 soundfile
 matplotlib
