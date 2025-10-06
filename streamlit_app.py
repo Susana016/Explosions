@@ -42,14 +42,14 @@ def process_video(video_path, model, fps=4, win_sec=2.0, stride_sec=0.5,
     with st.spinner("Extracting video frames..."):
         frames = sample_frames(video_path, fps=fps, resize=224)
         
+        # Convert to torch tensors
+        import torch
+        frames = torch.from_numpy(frames).float()  # Convert numpy to torch
+        frames = frames.permute(0, 3, 1, 2)  # Change from (N, H, W, C) to (N, C, H, W)
+        
         # Create frame differences
         diff_stacks = []
-        for i in range(len(frames)):
-            if i < 1:
-                diff_stacks.append(frames[i].repeat(3,1,1))
-            else:
-                diff_stacks.append(torch.cat([frames[i]-frames[i-1]]*3, dim=0))
-    
+        
     # Extract audio
     with st.spinner("Extracting audio features..."):
         audio = extract_audio_array(video_path, sr=sr)
