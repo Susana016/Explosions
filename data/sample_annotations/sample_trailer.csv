@@ -1,0 +1,5 @@
+video_id,start_sec,end_sec,event_type
+sample_trailer,2.0,2.3,explanation
+sample_trailer,7.5,7.6,explosion
+sample_trailer,10.0,11.5,explanation
+sample_trailer,18.2,18.3,explosion

@@ -1,0 +1,16 @@
+video_id,start_sec,end_sec,event_type
+mythbusters_clip1,0,3,explanation
+mythbusters_clip1,4,6,explosion
+mythbusters_clip1,7,13,explanation
+mythbusters_clip1,14,15,explosion
+mythbusters_clip1,16,20,explanation
+mythbusters_clip1,21,22,explosion
+mythbusters_clip1,23,58,explanation
+mythbusters_clip1,59,68,explosion
+mythbusters_clip1,69,71,explanation
+mythbusters_clip1,72,73,explosion
+mythbusters_clip1,74,77,explanation
+mythbusters_clip1,78,80,explosion
+mythbusters_clip1,81,82,explanation
+mythbusters_clip1,83,84,explosion
+mythbusters_clip1,84,85,explanation
